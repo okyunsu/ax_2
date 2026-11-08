@@ -1,0 +1,40 @@
+# 환경 설정·비밀 값
+.env
+.env.*
+!.env.example
+
+# 실제 자료 파생물 (기관명 포함 가능)
+outputs/
+samples/
+
+# 혹시 저장소 안에 들어온 원본 문서 차단 (templates/ 제외)
+*.hwp
+*.hwpx
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+!templates/**
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Node / React
+node_modules/
+dist/
+build/
+.vite/
+
+# 에디터·OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Claude Code 개인 설정
+.claude/settings.local.json
